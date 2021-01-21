@@ -1,16 +1,29 @@
-# app_background_utils_example
+# app_background_utils
 
-Demonstrates how to use the app_background_utils plugin.
+Press the return button on an Android phone, the app runs in the background
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+This project is a starting point for a Flutter
+[plug-in package](https://flutter.dev/developing-packages/),
+a specialized package that includes platform-specific implementation code for
+Android and/or iOS.
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+------
+
+Usage
+
+```dart
+RaisedButton.icon(
+          onPressed: () {
+            AppBackgroundUtils.navigateToSystemHome(); //返回到系统首页
+          },
+          icon: Icon(Icons.app_registration),
+          label: Text('Hide to background'),
+        )
+```
+
