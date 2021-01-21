@@ -2,7 +2,7 @@ name: app_background_utils
 description: Press the return button on an Android phone, the app runs in the background
 version: 1.0.0
 author: xotoot@gmail.com
-homepage: https://github.com/La2yTibers
+homepage: https://github.com/La2yTibers/app_background_utils
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
